@@ -20,7 +20,3 @@ Aquis\XporterBundle\XporterBundle::class => ['all' => true],
 ![alt text](./QR.png)
 
 https://www.paypal.com/donate/?hosted_button_id=5EH2ATMJKBXBC
-
-<pre>
-https://www.paypal.com/donate/?hosted_button_id=KWE9HDY4N5FKU
-</pre>
