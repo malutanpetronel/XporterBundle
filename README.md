@@ -15,3 +15,12 @@ In your project config/bundles.php verify and eventually add:
 <pre>
 Aquis\XporterBundle\XporterBundle::class => ['all' => true],
 </pre>
+
+#### Buy me a beer if it helps you
+![alt text](./QR.png)
+
+https://www.paypal.com/donate/?hosted_button_id=5EH2ATMJKBXBC
+
+<pre>
+https://www.paypal.com/donate/?hosted_button_id=KWE9HDY4N5FKU
+</pre>

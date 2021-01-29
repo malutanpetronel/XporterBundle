@@ -1,0 +1,5 @@
+.idea/
+vendor/
+.php_cs.cache
+**/node_modules
+behat.yml
