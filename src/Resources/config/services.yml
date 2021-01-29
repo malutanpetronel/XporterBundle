@@ -1,0 +1,29 @@
+# @copyright Aquis Grana impex srl (http://www.webnou.ro/)
+# @author    Petronel Malutan <malutanpetronel@gmail.com>
+parameters:
+    locale: en_US
+    aquis_xporter_directory: aquis_xporter
+    fs_fixtures_local: '%kernel.root_dir%/../web/public/fixtures'
+
+services:
+    aquis_xporter_plugin.command.xport:
+        class: Aquis\XporterBundle\Command\XportCommand
+        tags:
+            - { name: console.command } }
+
+    ### dump fixtures
+    Aquis\XporterBundle\Service\FixtureDump\EntityReader:
+        arguments:
+            - '@doctrine.orm.entity_manager'
+
+    Aquis\XporterBundle\Service\FixtureDump\FixturesWriter:
+        arguments:
+            - '@filesystem'
+            - '%fs_fixtures_local%'
+
+    Aquis\XporterBundle\Command\DoctrineFixtureDump:
+        arguments:
+            - '@Aquis\XporterBundle\Service\FixtureDump\EntityReader'
+            - '@Aquis\XporterBundle\Service\FixtureDump\FixturesWriter'
+        tags:
+            - { name: console.command }

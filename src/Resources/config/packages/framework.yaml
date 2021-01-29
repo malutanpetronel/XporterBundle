@@ -1,0 +1,13 @@
+framework:
+    serializer:
+        enabled: true
+        mapping:
+            paths: ['%kernel.project_dir%/config/serialization/']
+
+    translator: { fallbacks: ['%locale%'] }
+
+gesdinet_jwt_refresh_token:
+    firewall: refresh
+    ttl: 20
+    ttl_update: true
+    #user_provider: fos_user.user_provider.username
