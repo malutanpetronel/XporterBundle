@@ -9,7 +9,7 @@ services:
     aquis_xporter_plugin.command.xport:
         class: Aquis\XporterBundle\Command\XportCommand
         tags:
-            - { name: console.command } }
+            - { name: console.command }
 
     ### dump fixtures
     Aquis\XporterBundle\Service\FixtureDump\EntityReader:
