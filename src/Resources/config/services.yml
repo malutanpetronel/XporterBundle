@@ -3,7 +3,7 @@
 parameters:
     locale: en_US
     aquis_xporter_directory: aquis_xporter
-    fs_fixtures_local: '%kernel.root_dir%/../web/public/fixtures'
+    fs_fixtures_local: '%kernel.project_dir%/../web/public/fixtures'
 
 services:
     aquis_xporter_plugin.command.xport:
